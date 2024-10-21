@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIXEL ART STATION</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="header">
+            <!--heading bar with 2 buttons-->
+            <h1 class="heading">PIXEL ART STATION</h1>
+            <div class="header-btn-list">
+                <button class="button header-btn reset">RESET CANVAS</button>
+                <button class="button header-btn save">SAVE</button>
+            </div>
+        </nav>
+        <!--main div-->
+        <div class="main">
+            <!--controls-->
+            <div class="controls-list">
+                <h2 class="sub-heading">CONTROLS</h2>
+                <div class="controls">
+                    <div class="color">
+                        <div class="pen-color">
+                            <input id="pen-color" type="color" name="pen-color" value="#000">
+                            <label for="pen-color" class="text pen-color">Pen Colour</label>
+                        </div>
+                        <div class="bg-color">
+                            <input id="bg-color" type="color" name="bg-color" value="#fff">
+                            <label for="bg-color" class="text bg-color">Background Colour</label>
+                        </div>
+                    </div>
+                    <div class="grid-slider">
+                        <label for="grid-slider" class="text colour-text grid-slider">Size of Grid</label>
+                        <div class="slider-text">
+                            <span class="text">1x1</span>
+                            <span class="text">60x60</span>
+                        </div>
+                        
+                        <input id="grid-slider" type="range" name="grid-slider" min="1" max="60" value="16">
+                    </div>
+                    <div class="control-buttons">
+                        <div class="eraser">
+                            <button class="button control-btn eraser">ERASER</button>
+                        </div>
+                        <div class="rgb">
+                            <button class="button control-btn rgb">RGB</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--pixel canvas-->
+            <div class="canvas">
+                <!--check out at js file!-->
+            </div>
+        </div>
+        <div class="footer">
+            <div class="attribute">
+                <h3 class="sub-heading">Made by Aigle | Check out my <a href="https://github.com/aigle-levant">Github</a></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
